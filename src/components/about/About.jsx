@@ -22,6 +22,8 @@ return (
   src={photo} 
   alt="photo" 
     loading="lazy"
+    width={600}
+
   sizes="(max-width: 600px) 40vw, 640px"
 />
 
