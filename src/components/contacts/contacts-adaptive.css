@@ -1,0 +1,43 @@
+
+@media (max-width: 1300px) {
+    footer {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .contacts{
+        margin: 20px 0 0 0;
+        flex-direction: column;
+        width:fit-content;
+        gap: 30px;
+    }
+    form{
+        min-width: 600px;
+    }
+    .contacts-info h5{
+        margin-bottom: 10px;
+    }
+
+    .textarea {
+        height: 100px;
+    }
+
+    .submit-btn {
+        margin-top: 10px;
+    }
+
+    .name-email {
+        gap: 10px;
+    }
+}
+
+@media (max-width:650px) {
+    .contacts{
+        width: 100%;
+    }
+
+    form{
+        min-width: 90%;
+    }
+}

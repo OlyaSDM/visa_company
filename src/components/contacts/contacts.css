@@ -1,0 +1,149 @@
+:root {
+    --font-family: "Montserrat", sans-serif;
+    --second-family: "Roboto", sans-serif;
+    --third-family: "Poppins", sans-serif;
+    --font3: "Oswald", sans-serif;
+  }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  background-image: url('../../assets/footer-background.png');
+  background-size: cover;
+  background-position: bottom;
+  font-family: (var(--font-family));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 547px;
+  padding: 0 80px;
+}
+
+.contacts{
+  margin: 50px 120px 30px 120px; 
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 40px;
+}
+
+
+
+.contact-icon {
+  width: 50px;
+  transition: transform 0.3s ease;
+}
+
+.contact-icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.contacts-icons {
+  display: flex;
+  gap: 30px;
+  margin-top: 10px;
+}
+
+.contacts-icons a {
+  display: inline-block;
+}
+
+
+.contacts-info h5{
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 16px;
+
+}
+
+.contact {
+  display: flex;
+  align-items: center;
+}
+
+.contact p {
+  line-height: 40px;
+}
+
+.contact p span {
+  font-weight: 800;
+}
+
+.contact img {
+  padding-right: 20px;
+}
+
+.contact-icon{
+  width: 50px;
+  margin-top: 14px;
+}
+
+.insta {
+  color: black;
+  text-decoration: none;
+}
+
+.insta:hover{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.contact-form{
+  max-width: 800px;
+  width: 100%;
+}
+
+.contact-form h3{
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.name-email {
+  width: 100%;
+  margin: 19px 0 12px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+#name{
+  max-width: 390px;
+  width: 100%;
+  height: 52px;
+  box-shadow: 0px 4px 4px 0px rgba(15, 15, 15, 0.35);
+  border: none;
+  padding-left: 10px;
+}
+
+#email{
+  max-width: 390px;
+  width: 100%;
+  height: 52px;
+  box-shadow: 0px 4px 4px 0px rgba(15, 15, 15, 0.35);
+  border: none;
+  padding-left: 10px;
+
+}
+
+.textarea {
+  height: 135px;
+  width: 100%;
+  box-shadow: 0px 4px 4px 0px rgba(15, 15, 15, 0.35);
+  padding-left: 10px;
+  padding-top: 10px;
+}
+
+.submit-btn {
+  width: 100%;
+  height: 52px;
+  margin-top: 30px;
+  background-color: rgba(15,15,15,1);
+  color: rgba(255,255,255,1);
+  font-size: 20px;
+  font-weight: 700;
+  box-shadow: 0px 4px 4px 0px rgba(15, 15, 15, 0.35);
+}
