@@ -22,11 +22,6 @@ return (
   src={photo} 
   alt="photo" 
     loading="lazy"
-  srcSet={`
-    /assets/img_about-BidTzZTs-320.webp 320w,
-    /assets/img_about-BidTzZTs-640.webp 640w,
-    /assets/img_about-BidTzZTs-1024.webp 1024w
-  `}
   sizes="(max-width: 600px) 40vw, 640px"
 />
 
