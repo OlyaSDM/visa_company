@@ -20,17 +20,25 @@ const Welcome = () => {
     document.body.classList.remove('no-scroll');
   };
 
-  useEffect(() => {
-    const handleResize = () => {
+useEffect(() => {
+  let timeoutId;
+  const handleResize = () => {
+    clearTimeout(timeoutId);
+    timeoutId = setTimeout(() => {
       const mobile = window.innerWidth <= 768;
       setIsMobile(mobile);
       if (!mobile) closeMenu();
-    };
+    }, 150);
+  };
 
-    handleResize();
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
+  handleResize();
+  window.addEventListener('resize', handleResize);
+  return () => {
+    clearTimeout(timeoutId);
+    window.removeEventListener('resize', handleResize);
+  };
+}, []);
+
 
   return (
     <div className="head">
@@ -98,7 +106,6 @@ const Welcome = () => {
                     {{
                       about: 'ОБО МНЕ',
                       services: 'УСЛУГИ',
-                      benefits: 'ПРЕИМУЩЕСТВА',
                       FAQ: 'FAQ',
                       reviews: 'ОТЗЫВЫ',
                       contacts: 'КОНТАКТЫ',
