@@ -52,6 +52,8 @@ useEffect(() => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <html lang="ru" />
+<link rel="preload" as="style" href="/welcome.css" />
+
       </Helmet>
 
       <header className="header">
