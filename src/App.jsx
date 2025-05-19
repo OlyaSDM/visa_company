@@ -1,4 +1,3 @@
-
 import './App.css';
 import Welcome from "./components/welcome/Welcome";
 import About from "./components/about/About";
@@ -11,33 +10,32 @@ import Top from './components/top/Top';
 import Call from './components/call/call';
 import { Helmet } from 'react-helmet-async';
 
-
-
 function App() {
-
-    return (
-        <div className="App">
-            <Helmet>
+  return (
+    <div className="App">
+      <Helmet>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
     rel="stylesheet"
     media="print"
-    onLoad="this.media='all'"
+    onLoad={(e) => { e.target.media = 'all'; }}
   />
 </Helmet>
-            <Welcome/>
-            <About />
-            <Services />
-            <Work/>
-            <Faq />
-            <Reviews />
-            <Contacts />
-            <Call/>
-            <Top/>
-        </div>
-    );
+
+
+      <Welcome />
+      <About />
+      <Services />
+      <Work />
+      <Faq />
+      <Reviews />
+      <Contacts />
+      <Call />
+      <Top />
+    </div>
+  );
 }
 
-export default App
+export default App;

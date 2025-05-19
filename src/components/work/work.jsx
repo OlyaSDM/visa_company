@@ -31,7 +31,13 @@ const Work = () => {
     <div className="content_work">
     <h1 className='h1-benefits top_work'>как мы <b className='b_work'>работаем</b></h1>
 <div className="content_row">
-<img className='visa' src={visa} alt="visa" />
+<img
+  className="visa"
+  src={visa}
+  alt="visa"
+  width={589} 
+  height={330} 
+/>
 <div className="steps_work">
     <div className="first_steps">
     <div className="first_step">
